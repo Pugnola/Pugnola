@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Pugnola/Pugnola/main/assets/mezzanotte.jpg" alt="Mezzanotte, sabahı olmayan şehir" width="100%">
+  <img src="https://raw.githubusercontent.com/Pugnola/Pugnola/main/assets/mezzanotte-canli.gif" alt="Mezzanotte, sabahı olmayan şehir" width="100%">
 </p>
 
 <h1 align="center">Pugnola</h1>
