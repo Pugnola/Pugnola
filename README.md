@@ -1,26 +1,18 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Pugnola/Pugnola/main/assets/mezzanotte-canli.gif" alt="Mezzanotte, sabahı olmayan şehir" width="100%">
+  <img src="https://raw.githubusercontent.com/Pugnola/Pugnola/main/assets/mezzanotte-canli.gif" alt="Mezzanotte, the city with no morning" width="100%">
 </p>
 
-<h1 align="center">Pugnola</h1>
+# Pugnola
 
-<p align="center"><code>yapay zekâ · claude code · ajanlar · iş akışları</code></p>
+`AI` · `Claude Code` · `Agents` · `Workflows`
 
-<p align="center">
-  <a href="https://www.youtube.com/@Pugnola">YouTube</a> &nbsp;/&nbsp;
-  <a href="https://x.com/pugnolaai">X</a> &nbsp;/&nbsp;
-  <a href="https://www.tiktok.com/@pugnola">TikTok</a> &nbsp;/&nbsp;
-  <a href="https://www.instagram.com/pugnolaai">Instagram</a>
-</p>
+> **Claude cult leader.**<br>
+> I build things with AI agents so you don't have to read the docs, then show you how on YouTube.<br>
+> Living in Mezzanotte, the city with no morning.
 
-<p align="center">
-  Yapay zekâyı şemayla anlatıyorum. Anlamazsan suç benim değil.<br>
-  Mezzanotte'de yaşıyorum, sabahı olmayan şehirde. Claude tarikatı üyesi.
-</p>
+[YouTube ↗](https://www.youtube.com/@Pugnola) &nbsp;·&nbsp; [X ↗](https://x.com/pugnolaai)
 
-<p align="center">
-  Videolarda anlattığım skill'ler, ajanlar ve iş akışları zamanla burada birikecek.
-</p>
+<sub>The skills, agents and workflows from the videos end up here.</sub>
 
 <br>
 
