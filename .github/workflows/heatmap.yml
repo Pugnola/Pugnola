@@ -1,0 +1,41 @@
+name: heatmap
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/heatmap.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: heatmap
+  cancel-in-progress: true
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Draw contribution calendar
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python3 scripts/heatmap.py dark red assets/heatmap-dark.svg
+          python3 scripts/heatmap.py light red assets/heatmap-light.svg
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- assets; then
+            echo "nothing to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          git commit -m "heatmap: $(date -u +%Y-%m-%d) [skip ci]"
+          git push
