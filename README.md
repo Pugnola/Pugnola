@@ -13,6 +13,8 @@ Developer and ML tinkerer, building with AI agents.
 
 [YouTube ↗](https://www.youtube.com/@Pugnola) &nbsp;·&nbsp; [X ↗](https://x.com/pugnolaai)
 
+<sub>now building <b>dimensionnews.ai</b></sub>
+
 </div>
 
 <br>
