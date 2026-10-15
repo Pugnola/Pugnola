@@ -26,7 +26,7 @@ PALETTES = {
     ("light", "red"): ["#ebedf0", "#FFC9C9", "#FF8A93", "#E0303F", "#8A0E18"],
 }
 TEXT = {"dark": "#8b949e", "light": "#57606a"}
-MONTHS = ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"]
+MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 QUERY = """
 query($login: String!) {
@@ -97,7 +97,7 @@ def render(total: int, weeks, theme: str, palette: str) -> str:
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
         f'viewBox="0 0 {width} {height}" role="img" '
-        f'aria-label="son bir yılda {total} katkı">',
+        f'aria-label="{total} contributions in the last year">',
         "<style>"
         + "".join(f".l{i}{{fill:{c}}}" for i, c in enumerate(colors))
         + f'text{{fill:{text};font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:10px}}'
@@ -113,7 +113,7 @@ def render(total: int, weeks, theme: str, palette: str) -> str:
                 out.append(f'<text x="{left + wi * step}" y="12">{MONTHS[first.month - 1]}</text>')
             seen = first.month
 
-    for row, label in ((1, "Pzt"), (3, "Çar"), (5, "Cum")):
+    for row, label in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
         out.append(f'<text x="0" y="{top + row * step + 9}">{label}</text>')
 
     for wi, week in enumerate(weeks):
@@ -123,16 +123,16 @@ def render(total: int, weeks, theme: str, palette: str) -> str:
             y = top + wd * step
             out.append(
                 f'<rect class="l{level(count)}" x="{x}" y="{y}" width="{cell}" height="{cell}" rx="2">'
-                f"<title>{date}: {count} katkı</title></rect>"
+                f"<title>{date}: {count} contribution{'s' if count != 1 else ''}</title></rect>"
             )
 
     fy = top + 7 * step + 18
-    out.append(f'<text x="{left}" y="{fy}">son bir yılda {total:,} katkı</text>')
+    out.append(f'<text x="{left}" y="{fy}">{total:,} contributions in the last year</text>')
     lx = width - 4 - 5 * step - 58
-    out.append(f'<text x="{lx - 22}" y="{fy}">az</text>')
+    out.append(f'<text x="{lx - 30}" y="{fy}">less</text>')
     for i in range(5):
         out.append(f'<rect class="l{i}" x="{lx + i * step}" y="{fy - 9}" width="{cell}" height="{cell}" rx="2"/>')
-    out.append(f'<text x="{lx + 5 * step + 4}" y="{fy}">çok</text>')
+    out.append(f'<text x="{lx + 5 * step + 4}" y="{fy}">more</text>')
     out.append("</svg>")
     return "\n".join(out)
 
