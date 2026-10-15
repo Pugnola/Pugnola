@@ -2,20 +2,21 @@
   <img src="https://raw.githubusercontent.com/Pugnola/Pugnola/main/assets/mezzanotte-canli.gif" alt="Mezzanotte, the city with no morning" width="100%">
 </p>
 
+<div align="center">
+
 # Pugnola
 
-```yaml
-name:      Pugnola
-role:      Claude cult leader
-stack:     [AI, Claude Code, Agents, Workflows]
-mission:   build things with AI agents so you don't have to read the docs
-based_in:  Mezzanotte          # the city with no morning
-find_me:
-  youtube: youtube.com/@Pugnola
-  x:       x.com/pugnolaai
-```
+`AI` · `Claude Code` · `Agents` · `Workflows`
 
-[YouTube ↗](https://www.youtube.com/@Pugnola) &nbsp;·&nbsp; [X ↗](https://x.com/pugnolaai) &nbsp;·&nbsp; <sub>the skills, agents and workflows from the videos end up here</sub>
+**Claude cult leader.**<br>
+I build things with AI agents so you don't have to read the docs, then show you how on YouTube.<br>
+Living in Mezzanotte, the city with no morning.
+
+[YouTube ↗](https://www.youtube.com/@Pugnola) &nbsp;·&nbsp; [X ↗](https://x.com/pugnolaai)
+
+<sub>The skills, agents and workflows from the videos end up here.</sub>
+
+</div>
 
 <br>
 
