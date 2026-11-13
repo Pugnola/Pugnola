@@ -9,7 +9,7 @@
 `AI` · `Claude Code` · `Agents` · `Workflows`
 
 **Claude cult leader.**<br>
-Developer and ML tinkerer, building with AI agents.
+Applied ML Engineering · Forward Deployed Engineering · Agentic Engineering
 
 [YouTube ↗](https://www.youtube.com/@Pugnola) &nbsp;·&nbsp; [X ↗](https://x.com/pugnolaai)
 
